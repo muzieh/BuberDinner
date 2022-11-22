@@ -1,0 +1,11 @@
+POST http://localhost:5230/auth/login
+Content-Type: application/json
+
+{
+  "firstName":"asdf",
+  "lastName":"adfasdf",
+  "email":"asdf@fasdfa.pl",
+  "password":"sfsafasfasf"
+}
+
+###

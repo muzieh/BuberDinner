@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Infrastructure", "BuberDinner.Infrastructure\BuberDinner.Infrastructure.csproj", "{BF3FD9F4-E4A3-4598-8353-A833DB973EEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Domain", "BuberDinner.Domain\BuberDinner.Domain.csproj", "{E7F5C22A-0D81-4340-9FCB-F46E6B74D35B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Contracts", "BuberDinner.Contracts\BuberDinner.Contracts.csproj", "{CA98E2CF-A4F5-42F0-BE06-C297E72232DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Application", "BuberDinner.Application\BuberDinner.Application.csproj", "{CCF50BE3-810E-4F27-8F50-FDBF357710A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Api", "BuberDinner.Api\BuberDinner.Api.csproj", "{288389B5-3420-48E7-B3A7-E03D2E80AE7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requests", "Requests", "{E4598A52-74DA-4CEF-BC09-83126AE3C662}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WeatherForecast", "WeatherForecast", "{7F54D3AE-FEBB-41CE-8F2C-E90F24192D0D}"
+	ProjectSection(SolutionItems) = preProject
+		Requests\WeatherForecast\rest-api.http = Requests\WeatherForecast\rest-api.http
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF3FD9F4-E4A3-4598-8353-A833DB973EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3FD9F4-E4A3-4598-8353-A833DB973EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3FD9F4-E4A3-4598-8353-A833DB973EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3FD9F4-E4A3-4598-8353-A833DB973EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7F5C22A-0D81-4340-9FCB-F46E6B74D35B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7F5C22A-0D81-4340-9FCB-F46E6B74D35B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7F5C22A-0D81-4340-9FCB-F46E6B74D35B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7F5C22A-0D81-4340-9FCB-F46E6B74D35B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA98E2CF-A4F5-42F0-BE06-C297E72232DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA98E2CF-A4F5-42F0-BE06-C297E72232DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA98E2CF-A4F5-42F0-BE06-C297E72232DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA98E2CF-A4F5-42F0-BE06-C297E72232DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF50BE3-810E-4F27-8F50-FDBF357710A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF50BE3-810E-4F27-8F50-FDBF357710A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF50BE3-810E-4F27-8F50-FDBF357710A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF50BE3-810E-4F27-8F50-FDBF357710A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288389B5-3420-48E7-B3A7-E03D2E80AE7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288389B5-3420-48E7-B3A7-E03D2E80AE7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288389B5-3420-48E7-B3A7-E03D2E80AE7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288389B5-3420-48E7-B3A7-E03D2E80AE7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F54D3AE-FEBB-41CE-8F2C-E90F24192D0D} = {E4598A52-74DA-4CEF-BC09-83126AE3C662}
+	EndGlobalSection
+EndGlobal
