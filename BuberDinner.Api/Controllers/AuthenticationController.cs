@@ -1,3 +1,4 @@
+using BuberDinner.Application.Common.Interfaces;
 using BuberDinner.Application.Services.Authentication;
 using BuberDinner.Contracts.Authentication;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +16,24 @@ public class AuthenticationController : ControllerBase
         _authenticationService = authenticationService;
     }
 
+    [HttpPost("register")]
+    public IActionResult Register([FromBody] RegisterRequest request)
+    {
+        // Check if user already registered
+        
+        // Create a new user (generate unique ID)
+        var result = _authenticationService.Register(request.FirstName,
+            request.LastName,
+            request.Email,
+            request.Password);
+
+            
+        var response =
+            new AuthenticationResult(result.Id, result.FirstName, result.LastName, result.Email, result.Token);
+        return Ok(response);
+    }
+    
+
     [HttpPost("login")]
     public IActionResult Login([FromBody] LoginRequest request)
     {
@@ -26,15 +45,4 @@ public class AuthenticationController : ControllerBase
         return Ok(response);
     }
 
-    [HttpPost("register")]
-    public IActionResult Register([FromBody] RegisterRequest request)
-    {
-        var result = _authenticationService.Register(request.FirstName,
-            request.LastName,
-            request.Email,
-            request.Password);
-        var response =
-            new AuthenticationResult(result.Id, result.FirstName, result.LastName, result.Email, result.Token);
-        return Ok(response);
-    }
 }
